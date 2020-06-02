@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button onclick="this.style.background='Red'">
+    In event handler
+  </button>
+
+  <button onclick="eventHandler(this)">
+    Pass to function from event handler
+  </button>
+
+  <script>
+    'use strict';
+
+    function eventHandler(ctl) {
+      console.log(ctl.toString());
+    }
+  </script>
+
+</body>
+
+</html>
