@@ -4,8 +4,8 @@ let pieCtx = document.getElementById('deptSales').getContext('2d');
 
 let yearlyLabel = document.getElementById('yearlyTotal');
 
-let newAmount = document.getElementById('idemAmount')
-let newMonth = document.getElementById('monthId');
+let newAmount = document.getElementById('itemAmount')
+let newMonth = document.getElementById('exampleInputEmail1');
 
 // let monthlySales = Array.of(500, 9000, 3000, 4000);
 // let monthlyLabels = Array.of('Oct', 'Nov', 'Dec');
@@ -18,6 +18,12 @@ let yearlyTotal = 0;
 const monthlySales = new Set();
 const monthlyLabels = new Set();
 
+function addSale() {
+  monthlySales.add(newAmount.value);
+  monthlyLabels.add(newMonth.value);
+  alert('You have entered in ' + monthlySales.size + ' sales')
+  console.log(monthlySales)
+}
 
 // function addYearlyTotal(x) {
 //   yearlyTotal = x + yearlyTotal;
