@@ -25,3 +25,11 @@ while (!res.done) {
   console.log(res.value)
   res = it.next()
 }
+
+const arr = [0, 3, 4, 6];
+const it = arr[Symbol.iterator]();
+console.log(it.next())
+console.log(it.next())
+console.log(it.next())
+console.log(it.next())
+console.log(it.next())
