@@ -1,6 +1,17 @@
-'use strict'; 
-(function() {
+'use strict';
+(function () {
 
-  display('Hello World');
+  let person = {
+    firstName: 'Jam',
+    lastName: 'Cooper'
+  }
+
+  person.age = 29;
+  person.isAdult = function () {
+    return this.age >= 18;
+  }
+
+
+
 
 })();
