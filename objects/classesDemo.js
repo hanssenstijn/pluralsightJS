@@ -1,6 +1,6 @@
 'use strict';
 (function () {
-
+  // consturctor for property values
   class Person {
     constructor(firstName, lastName) {
       this.firstName = firstName;
@@ -9,6 +9,7 @@
     }
   }
 
+  // extend the instance
   class Student extends Person {
     constructor(firstName, lastName, age) {
       super(firstName, lastName, age);
@@ -16,6 +17,7 @@
     }
   }
 
+  // create new instance
   let jim = new Person('Jim', 'Cooper', 29);
 
   jim.age = 29;
